@@ -19,7 +19,9 @@ public class Numero {
 			return "PAR POSITIVO";
 		} else if (this.valor % 2 != 0 && this.valor > 0) {
 			return "ÍMPAR POSITIVO";
-		}else {
+		} else if (this.valor % 2 != 0 && this.valor < 0) {
+			return "ÍMPAR NEGATIVO";
+		} else {
 			return "Nulo";
 		}
 	}
